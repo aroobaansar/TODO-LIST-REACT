@@ -1,0 +1,41 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(163, 187, 210);
+    border-radius: 8px;
+    background-color: rgb(0, 64, 133);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.filter-buttons {
+    display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-right: -20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden; /* To ensure buttons are contained within the border */
+}
+.filter-buttons button {
+    flex: 1;
+    padding: 20px 20px;
+    border: none;
+    background-color: #004085;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.filter-buttons button:last-child {
+    border-right: none; 
+}
+.filter-buttons button:hover {
+    background-color: rgb(163, 187, 210);
+    color: #004085;
+}
+.filter-buttons button.active {
+    background-color: rgb(163, 187, 210);
+    color: #004085;
+    font-weight: bold;
+}
